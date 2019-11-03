@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			a {
+				text-decoration: none;
+				color: #333;
+				font-weight: bold;
+			}
+			
+			#wrap {
+				width: 960px;
+				display: block;
+				margin: 0 auto;
+			}
+			
+			.head .headMenu {
+				height: 40px;
+				line-height: 39px;
+				border: 1px solid #e3e3e3;
+				border-radius: 3px;
+			}
+			
+			.head .headMenu li {
+				display: block;
+				padding-left: 10px;
+			}
+			
+			.head .headMenu li a {
+				float: left;
+				padding: 0 50px;
+				font-size: 16px;
+			}
+			
+			.head .headMenu li a:hover {
+				color: red;
+			}
+			
+			.tab_container {
+				text-align: center;
+				height: 300px;
+				line-height: 300px;
+				border: 1px solid #e3e3e3;
+			}
+			
+			#wrap .head .headMenu .active a {
+				color: blue;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div id="wrap">
+			<div class="head">
+				<ul class="tabs headMenu">
+					<li class="active">
+						<a href="#tab1">A</a>
+					</li>
+					<li>
+						<a href="#tab2">B</a>
+					</li>
+					<li>
+						<a href="#tab3">C</a>
+					</li>
+					<li>
+						<a href="#tab4">D</a>
+					</li>
+					<li>
+						<a href="#tab5">E</a>
+					</li>
+				</ul>
+			</div>
+			<div class="tab_container">
+				<div id="tab1" class="tab_content" style="display: block; ">
+					<h1>This is pageA.</h1>
+				</div>
+				<div id="tab2" class="tab_content" style="display: block; ">
+					<h1>This is pageB.</h1>
+				</div>
+				<div id="tab3" class="tab_content" style="display: block; ">
+					<h1>This is pageC.</h1>
+				</div>
+				<div id="tab4" class="tab_content" style="display: block; ">
+					<h1>This is pageD.</h1>
+				</div>
+				<div id="tab5" class="tab_content" style="display: block; ">
+					<h1>This is pageE.</h1>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(".tab_content").hide();
+		$("ul.tabs li:first").addClass("active").show();
+		$(".tab_content:first").show();
+
+		$("ul.tabs li").click(function() {
+			$("ul.tabs li").removeClass("active");
+			$(this).addClass("active");
+			$(".tab_content").hide();
+			var activeTab = $(this).find("a").attr("href");
+			$(activeTab).fadeIn();
+			return false;
+		});
+	</script>
+
+</html>

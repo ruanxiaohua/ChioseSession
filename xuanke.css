@@ -1,0 +1,81 @@
+*{
+	margin: 0px;
+	padding: 0px;
+}
+body{
+	background:#F6F6F6;
+}
+
+/*头部样式*/
+.toubu{
+	height: 50px;
+    background: #51B7B0;
+    color: #fff;
+}
+.tbTitle{
+	width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    line-height: 50px;
+}
+.tleft{
+	text-align: left;
+	width: 10%;
+}
+.tcenter{
+	text-align: center;
+	width: 80%;
+}
+.tright{
+	text-align: right;
+	width: 10%;
+}
+.tleft span::before{
+	content: '|';
+	margin-right: 10px;
+}
+.tcenter span{
+	padding: 5px 10px;
+	margin: 0px 10px;
+	cursor: pointer;
+	
+}
+.tcenter span a{
+	text-decoration: none;
+	color: #fff;
+	
+}
+.active{
+	background: #fff;
+    border-radius: 3px;
+    color: #000000;
+}
+/*内容块*/
+.content{
+	width: 1200px;
+	margin: 20px auto;
+	background: #fff;
+}
+.content .courseInfo{
+	min-height: 400px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	
+}
+/*某个课程*/
+.content .courseInfo .course-one{
+	width: 275px;
+	height: 188px;
+	margin-bottom: 20px;
+	background: red;
+}
+/*尾部样式*/
+.foot-div{
+	text-align: center;
+    width: 820px;
+    margin: 0 auto;
+    font-size: 11px;
+    line-height: 30px;
+}

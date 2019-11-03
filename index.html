@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>选课排课</title>
+		<link rel="stylesheet" href="css/index.css" />
+		<script type="text/javascript" src="js/commen/jquery-2.0.3.min.js" ></script>
+		<script type="text/javascript" src="js/index.js" ></script>
+	</head>
+	<body>
+		<!--头部-->
+		<header class="toubu">
+			<div class="tbTitle">
+			   <div class="tleft">
+			   	<span>排课系统</span>
+			   </div>
+			   <div class="tabs tcenter">
+			   	<span class="active">
+			   		<a style="color:#51B7B0;" href="#content1">选课</a>
+			   	</span>
+			   	<span>
+			   		<a href="#content2">课表</a>
+			   	</span>
+			   	<span>
+			   		<a href="#content3">职业生涯规划</a>
+			   	</span>
+			   </div>
+			   <div class="tright">
+			   	<span>罗小黑</span>
+			   </div>			   
+			</div>
+		</header>
+		 <!--选课内容-->
+		<div>
+		 <div class="content">
+		 	<!--选课内容-->
+		 	<div id="content1" class="tab_content">
+			<!--标题头部-->
+			 <div class="content-title">
+				<p class="p1">
+				    <span class="span1"><a href="newym.html">< 返回</a></span>
+				    <span class="span2">师大附中校本选课</span>
+				</p>
+				<p class="p2">
+					<span>校本选课</span>
+					<span>2018-06-14 11:44:4开始</span>
+					<span> 2018-09-07  09:4结束</span>
+					<span>先到先得</span>
+					<span>最少选2门，最多选4门</span>
+				</p>			
+			 </div>
+			 <!--网页提示-->
+			 <div class="content-ts">
+				<p>
+					<span>备注：</span>
+					同学们选课时须注意: 1. 每门课的第一、二节课上的是同样的内容,如跆拳道第一节和跆拳道第二节授课内容相同，不能重复选择。另外，如果已选跆拳道第一节，就不能同时兼选其他在第一节开
+					设的课程，需选另外一门在第二节开设的课程。2.“生物趣味课堂”因每次连堂上课，选修本课程的学生需同时选择“生物趣味课堂（第一节）”和“生物趣味课堂（第二节）”，不能兼选其他课程，
+					该门课学分扔按两门计算；每个课程领域最多选1门。
+				</p>
+			 </div>
+			 <div class="content-nav">
+				<div class="content-nav-div1">
+					<span>我的选课</span>
+					<button class="bcBtn">保存</button>
+					<button class="tjBtn">提交</button>
+					<button style="display: none;" class="chBtn">撤回</button>
+				</div>
+				<div class="content-nav-div2">
+					<span><a style="background: #51B7B0;color: #fff;" href="#renwen">人文</a></span>
+					<span><a href="#keji">科技</a></span>
+					<span><a href="#yiti">艺体</a></span>
+					<span><a>养生</a></span>
+					<span><a>科研</a></span>
+					<span><a>乐器</a></span>
+				</div>
+				<div>		
+					<!--某类课程-->
+					<div id="renwen" class="course-div">
+						<p class="cour-name">人文</p>
+						<div class="allCourse">
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" / /></p>
+									    <p ><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+						    <div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--某类课程-->
+					<div id="keji" class="course-div">
+						<p class="cour-name">科技</p>
+						<div class="allCourse">
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p ><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>：男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				    <!--某类课程-->
+					<div id="yiti" class="course-div">
+						<p class="cour-name">艺体</p>
+						<div class="allCourse">
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p ><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+							<div class="oneCourse">
+								<div class="course-top">
+									<div class="course-img">
+										<img src="img/course.jpg"/>
+									</div>
+									<div class="course-info">		
+										<p class="courName"><span>园林艺术</span><img class="changeCource" src="img/选择（未选）.png" /></p>
+									    <p ><span style="margin-right: 64px;">王老师 </span><span>学分 <em style="color: #FF6B6B;">3</em></span></p>
+									    <p><span style="margin-right: 45px;">已选：<em>234</em></span><span>剩余：<em style="color: #51B7B0;">10</em></span></p>
+									    <p><span>地点：</span><span>G-1-201</span></p>
+									</div>	
+								</div>
+								<div class="course-content">
+									<p><span style="color: #51B7B0;">排课时间:</span>周三第4节、周五第3</p>
+									<p><span style="color: #51B7B0;">课程备注:</span>男生：12人，女生：</p>
+									<p class="courseTs"><span style="color: #51B7B0;">课程特色:</span>园林设计师是具备生态学、园林植物与观赏园。园林设计师是具备生态学、园林植物与观赏园。</p>
+								</div>
+								<div class="course-bottom">
+									<span class="xq" style="margin-right: 6px;">详情</span><img class="xqImg" src="img/详细（下拉）.png" />
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>			
+			 </div>
+			</div>
+			<!--课表内容-->
+		    <div id="content2" class="tab_content" style="display: none;">
+		 	   <div style="min-height: 300px;">课表信息</div>
+		    </div>
+		    <!--职业生涯规划内容-->
+		    <div id="content3" class="tab_content" style="display: none;">
+		 	  <div style="min-height: 300px;">职业生涯规划</div>
+		    </div>
+		    <!--内容尾部背景图片-->
+			<div style="background: url(img/插画.png);height: 135px;"></div>
+		</div>
+		 	 
+		 
+		</div>
+		<!--尾部-->
+		<footer>
+			<div class="foot-div">©版权所有：广州光大教育软件科技股份有限公司 技术支持：广州光大教育软件科技股份有限公司 粤ICP备12040704号-1 客服邮箱：gd_service@163.com
+                                网址：http://www.gdtech.com.cn 地址：广州市科学城彩频路7号广东软件园D栋4楼 联系我们：020-87748373；020-87749373 传真：020-87746763
+			</div>
+		</footer>
+	</body>
+</html>
